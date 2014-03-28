@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">--> 
+<head>  
+  <meta charset="utf-8">  
+  <title>...:Welcome to W5RTC:...</title>  
+  <meta name="description" content="Spinning globe and rotating earth demo using jQuery and javascript written by Chris Baldelomar.">  
+  <!--[if lt IE 9]>  
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+  <![endif]-->  
+  <script src="js/jquery-1.8.0.min.js"></script>  
+  <script src="js/jquery.spinningGlobe.min.js"></script>  
+  <link rel="stylesheet" href="css/styles.css">  
+  <script type="text/javascript">
+		$(document).ready(function(){
+			// Initialize Globe 3
+			$("#globe3").spinningGlobe({
+				earthWidth: 1511, // width of the earth map 
+				earthHeight: 400, // height of the earth map
+				prefix: 'img/globe3/', // prefix for your image path
+				logo: false, // if true, will look for image file named 'globe_middleground_{width}x{height}.png'
+				resistance: 30 // value 1-100. The higher the number, the slower the globe spins.
+			});
+
+			// Initialize Globe 1
+			// This will initialize a default spinning globe 500x500 pixels.
+			// The earth map will be 1889x500
+			// It will look for these files in "img/globe1/" folder
+			$("#globe1").spinningGlobe();
+
+			// Initialize Globe 2
+			$("#globe2").spinningGlobe({
+				earthWidth: 1700, // width of the earth map 
+				earthHeight: 450, // height of the earth map
+				prefix: 'img/globe2/', // prefix for your image path
+				logo: true, // if true, will look for image file named 'globe_middleground_{width}x{height}.png'
+				resistance: 40 // value 1-100. The higher the number, the slower the globe spins.
+			});
+		});
+
+		// Google Analytics
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-15243391-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+  </script>
+</head>  
+<body>  
+	<h1>Welcome to W5RTC</h1>
+	<a href="index1.html" class="textlink"><div id="globe2"></div>
+    <div style="text-align:center; padding:10px; background-color:#F90; margin:auto; width:100px; font-size:20px; color:#FFF; font-weight:bold;">
+    Enter
+    </div></a>
+</body>  
+</html>  
+

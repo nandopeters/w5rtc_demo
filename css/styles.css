@@ -1,0 +1,29 @@
+body {
+	text-align: center;
+	background-color: black;
+	color: #f2f2f2;
+}
+a {
+	color: green;
+}
+a.textlink{
+	text-decoration:none;
+	color:#FFF;
+	outline:none;
+}
+
+a.textlink:hover{
+	text-decoration:none;
+	color:#FFF;
+	outline:none;
+}
+h1 {
+	margin-bottom: 30px;
+	color: #f2f2f2;
+}
+#globe1,
+#globe3,
+#globe2 {
+	margin: auto;
+	margin-bottom:30px;
+}
