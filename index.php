@@ -1021,6 +1021,7 @@ var rand=Math.floor(Math.random()*10000+1)
         </script>
                 <script>
 						//(function() {
+						//the below code is for taking pic and stop camera
 
   var streaming = false,
       video        = document.querySelector('#video'),
